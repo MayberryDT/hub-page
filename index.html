@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler Mayberry | Hub</title>
     <link rel="icon" type="image/jpeg" href="favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-void: #050505;
             --glass-surface: rgba(255, 255, 255, 0.03);
             --glass-border: rgba(255, 255, 255, 0.1);
             --text-light: #ffffff;
-            --text-dim: rgba(255, 255, 255, 0.4);
+            --text-dim: rgba(255, 255, 255, 0.65);
             --prism-accent: rgba(255, 255, 255, 0.8);
             --font-display: 'Outfit', sans-serif;
             --font-mono: 'Courier New', Courier, monospace;
@@ -78,7 +81,7 @@
         }
 
         h1 {
-            font-weight: 200;
+            font-weight: 300;
             letter-spacing: 4px;
             font-size: 24px;
             text-transform: uppercase;
@@ -149,15 +152,15 @@
         }
 
         .link-text {
-            font-weight: 300;
+            font-weight: 400;
         }
 
         .link-arrow {
             font-family: var(--font-mono);
-            font-size: 12px;
-            opacity: 0;
-            transform: translateX(-10px);
-            transition: all 0.3s ease;
+            font-size: 14px;
+            opacity: 0.4;
+            transform: translateX(-5px);
+            transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
         }
 
         .prism-link:hover .link-arrow {
@@ -178,6 +181,12 @@
 
             <nav>
                 <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="https://x.com/tyler_mayberry" class="prism-link">
+                            <span class="link-text">X</span>
+                            <span class="link-arrow">-></span>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="https://tylermayberry.media" class="prism-link">
                             <span class="link-text">Ads Portfolio</span>
